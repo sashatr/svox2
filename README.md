@@ -53,6 +53,24 @@ pip install .
 ```
 In the repo root directory.
 
+## Alternate setup option
+
+First step is prepare a docker image with the correct version of cuda (11.3)
+```
+docker pull nvidia/cuda:11.3.0-cudnn8-devel-ubuntu20.04
+```
+
+Next, install the required dependencies
+```
+pip3 install -r requirments.txt
+```
+
+To install the main library, simply run
+```
+pip install .
+```
+In the repo root directory.
+
 ## Getting datasets
 
 We have backends for NeRF-Blender, LLFF, NSVF, and CO3D dataset formats, and the dataset will be auto-detected.
